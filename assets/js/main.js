@@ -27,7 +27,7 @@ function calcolaTariffa() {
     let numeroDistanzaConDueDecimali
 
     // Condizione alla validità dei valori inseriti
-    if ((numeroDistanzaInput > 1000 || numeroDistanzaInput === null || numeroDistanzaInput <= 0) && (etaInput > 100 || etaInput === null || etaInput <= 0)) {
+    if ((numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) && (etaInput > 100 || isNaN(numeroDistanzaInput) || etaInput <= 0)) {
         alert("Entrambi i valori non sono corretti, riprovare.");
 
     } else {

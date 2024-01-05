@@ -19,23 +19,23 @@
 
 <body>
     <section class="container rounded-3 mt-5 py-2 text-white shadow-lg" id="box">
-        <div id="title">
+        <div class="py-1" id="title">
             <h1 class="text-center text-uppercase mb-0">calcolo biglietto treno</h1>
         </div>
         <hr class="border border-white border-3 opacity-75 my-2">
         <div>
-            <h2 class="text-center mb-0">Inserisci i tuoi dati di viaggio:</h1>
+            <h2 class="text-center mb-0 my-3">Inserisci i tuoi dati di viaggio:</h1>
         </div>
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation pt-2" novalidate>
             <div class="col-6">
-                <label for="numeroDistanza" class="form-label">Distanza tratta:</label>
+                <label for="numeroDistanza" class="form-label fs-5">Distanza tratta: (km)</label>
                 <input type="number" class="form-control" id="numeroDistanza" required>
                 <div class="valid-feedback">
                     Looks good!
                 </div>
             </div>
             <div class="col-6">
-                <label for="eta" class="form-label">Età:</label>
+                <label for="eta" class="form-label fs-5">Età:</label>
                 <input type="number" class="form-control" id="eta" required>
                 <div class="valid-feedback">
                     Looks good!

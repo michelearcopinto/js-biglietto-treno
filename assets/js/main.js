@@ -50,6 +50,10 @@ function calcolaTariffa() {
 
                 console.log("Stringa:", numeroDistanzaConDueDecimali)
 
+                let priceOutput = document.getElementById('priceOutput')
+
+                priceOutput.value = numeroDistanzaConDueDecimali
+
             } else if (etaInput > 65) {
                 // Sconto del 40% per gli over 65
                 scontoOver = (numeroDistanzaTariffa - ((numeroDistanzaTariffa * 40) / 100))
@@ -59,14 +63,20 @@ function calcolaTariffa() {
 
                 console.log("Stringa:", numeroDistanzaConDueDecimali)
 
+                let priceOutput = document.getElementById('priceOutput')
+
+                priceOutput.value = numeroDistanzaConDueDecimali
+
             } else {
                 // Prezzo normale tra i 18 ed i 65
                 numeroDistanzaConDueDecimali = numeroDistanzaTariffa.toFixed(2);
 
                 console.log("Stringa:", numeroDistanzaConDueDecimali)
+
+                let priceOutput = document.getElementById('priceOutput')
+
+                priceOutput.value = numeroDistanzaConDueDecimali
             }
         }
     }
 }
-
-

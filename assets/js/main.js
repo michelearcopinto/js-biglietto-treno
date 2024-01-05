@@ -27,15 +27,15 @@ function calcolaTariffa() {
     let numeroDistanzaConDueDecimali
 
     // Condizione alla validità dei valori inseriti
-    if ((numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) && (etaInput > 100 || isNaN(numeroDistanzaInput) || etaInput <= 0)) {
+    if ((numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) && (etaInput > 100 || isNaN(etaInput) || etaInput <= 0)) {
         alert("Entrambi i valori non sono corretti, riprovare.");
 
     } else {
 
-        if (numeroDistanzaInput > 1000 || numeroDistanzaInput === null || numeroDistanzaInput <= 0) {
+        if (numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) {
             alert("La distanza impostata non è valida, assicurati di inserire un valore compreso tra 0 e 1000 chilometri");
 
-        } else if (etaInput > 100 || etaInput === null || etaInput <= 0) {
+        } else if (etaInput > 100 || isNaN(etaInput) || etaInput <= 0) {
             alert("Il formato dell'età non è corretto, assicurati di inserire un valore compreso tra 0 e 100");
 
         } else {

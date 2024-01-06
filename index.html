@@ -45,13 +45,61 @@
                 <button class="btn btn-primary fs-3 shadow" type="button" id="calcolaBottone">Calcola prezzo</button>
             </div>
         </form>
-        <div class="mt-4" id="cash">
+        <div class="mt-4 pb-3" id="cash">
             <div class="w-50 mx-auto py-3 d-flex">
                 <label for="cashResult" class="form-label fs-4">Il prezzo del tuo biglietto è:</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">€</span>
                     <input type="text" class="form-control fs-3" aria-label="Amount (to the nearest dollar)" readonly
                         id="priceOutput">
+                </div>
+            </div>
+            <div class="card mx-3">
+                <div class="card-header">
+                    <h2>Tariffe:</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row px-3">
+                        <div class="col-4 mb-3 mb-sm-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tariffa Standard (18-65):</h5>
+                                    <p class="card-text">Seleziona la nostra tariffa standard se sei un passeggero
+                                        adulto. Il calcolo del prezzo del tuo viaggio si baserà sul numero di chilometri
+                                        che desideri percorrere, con un <strong>costo di 0.21 € al km.</strong> Nessuno
+                                        sconto sarà
+                                        applicato per questa tariffa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tariffa Junior (0-17):</h5>
+                                    <p class="card-text">Scegli la tariffa junior se sei un passeggero minorenne. Quando
+                                        inserisci il numero di chilometri che vuoi percorrere e la tua età, il sistema
+                                        calcolerà automaticamente uno <strong>sconto del 20%</strong> sul prezzo totale
+                                        del biglietto,
+                                        rendendo il viaggio più conveniente per i giovani esploratori.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tariffa Over (65+):</h5>
+                                    <p class="card-text">Opta per la tariffa over 65 se sei un passeggero anziano.
+                                        Indicando il numero di chilometri e la tua età, il calcolatore applicherà uno
+                                        <strong>sconto del 40%</strong> sul prezzo standard del biglietto. Viaggia
+                                        comodamente e a prezzi
+                                        convenienti grazie a questa opzione dedicata ai nostri passeggeri più anziani.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

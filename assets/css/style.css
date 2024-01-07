@@ -17,3 +17,13 @@ body {
 .card {
     background-color: rgba(250, 250, 250, 0.9);
 }
+
+.card {
+    transition: background 0.25s;
+}
+
+.card-body p,
+.card-body h1 {
+    transition: background 0.25s;
+    ;
+}

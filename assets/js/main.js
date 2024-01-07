@@ -26,6 +26,11 @@ function calcolaTariffa() {
     let scontoOver;
     let numeroDistanzaConDueDecimali
 
+    let cardNormal;
+    let cardJunior;
+    let cardOver;
+    let cardNormalText
+
     // Condizione alla validità dei valori inseriti
     if ((numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) && (etaInput > 100 || isNaN(etaInput) || etaInput <= 0)) {
         alert("Entrambi i valori non sono corretti, riprovare.");
@@ -54,6 +59,29 @@ function calcolaTariffa() {
 
                 priceOutput.value = numeroDistanzaConDueDecimali
 
+                // Aggiungi una classe
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.add("bg-primary");
+
+                // Rimuovi le classi dalle altre due card
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.remove("bg-primary");
+
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.remove("bg-primary");
+
+                // Aggiungi una classe
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.add("text-white");
+
+                // Rimuovi le classi dalle altre due card
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.remove("text-white");
+
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.remove("text-white");
+
+
             } else if (etaInput > 65) {
                 // Sconto del 40% per gli over 65
                 scontoOver = (numeroDistanzaTariffa - ((numeroDistanzaTariffa * 40) / 100))
@@ -67,6 +95,29 @@ function calcolaTariffa() {
 
                 priceOutput.value = numeroDistanzaConDueDecimali
 
+                // Aggiungi una classe
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.add("bg-primary");
+
+                // Rimuovi le classi dalle altre due card
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.remove("bg-primary");
+
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.remove("bg-primary");
+
+                // Aggiungi una classe
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.add("text-white");
+
+                // Rimuovi le classi dalle altre due card
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.remove("text-white");
+
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.remove("text-white");
+
+
             } else {
                 // Prezzo normale tra i 18 ed i 65
                 numeroDistanzaConDueDecimali = numeroDistanzaTariffa.toFixed(2);
@@ -76,6 +127,35 @@ function calcolaTariffa() {
                 let priceOutput = document.getElementById('priceOutput')
 
                 priceOutput.value = numeroDistanzaConDueDecimali
+
+                // Aggiungi una classe
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.add("bg-primary");
+
+                // Rimuovi le classi dalle altre due card
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.remove("bg-primary");
+
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.remove("bg-primary");
+
+                // Aggiungi una classe
+                cardNormal = document.getElementById("cardNormal");
+                cardNormal.classList.add("text-white");
+
+                // Rimuovi le classi dalle altre due card
+                cardJunior = document.getElementById("cardJunior");
+                cardJunior.classList.remove("text-white");
+
+                cardOver = document.getElementById("cardOver");
+                cardOver.classList.remove("text-white");
+
+
+                // Aggiungi una proprietà CSS
+                cardNormalText = document.getElementById("cardNormalText");
+                cardNormalText.style.color = "#09E10D"
+
+
             }
         }
     }

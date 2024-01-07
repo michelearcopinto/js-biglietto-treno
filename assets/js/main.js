@@ -29,7 +29,6 @@ function calcolaTariffa() {
     let cardNormal;
     let cardJunior;
     let cardOver;
-    let cardNormalText
 
     // Condizione alla validità dei valori inseriti
     if ((numeroDistanzaInput > 1000 || isNaN(numeroDistanzaInput) || numeroDistanzaInput <= 0) && (etaInput > 100 || isNaN(etaInput) || etaInput <= 0)) {
